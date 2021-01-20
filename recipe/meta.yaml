@@ -49,6 +49,9 @@ test:
     - test.py
   commands:
     - "python test.py"
+app:
+  entry: pymol
+  summary: "PyMOL molecular visualization system"
 
 about:
   home: https://pymol.org/
@@ -61,10 +64,6 @@ about:
     PyMOL is a trademark of Schrodinger, LLC.
   doc_url: https://pymolwiki.org/
   dev_url: https://github.com/schrodinger/pymol-open-source/
-
-app:
-  entry: pymol
-  summary: "PyMOL molecular visualization system"
 
 extra:
   recipe-maintainers:
