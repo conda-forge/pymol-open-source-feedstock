@@ -1,5 +1,5 @@
 {% set version = "2.4.0" %}
-{% set number = "0" %}
+{% set number = "1" %}
 
 package:
   name: pymol-open-source
@@ -49,6 +49,9 @@ test:
     - test.py
   commands:
     - "python test.py"
+app:
+  entry: pymol
+  summary: "PyMOL molecular visualization system"
 
 about:
   home: https://pymol.org/
