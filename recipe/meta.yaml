@@ -1,5 +1,5 @@
 {% set version = "2.4.0" %}
-{% set number = "1" %}
+{% set number = "2" %}
 
 package:
   name: pymol-open-source
@@ -27,6 +27,7 @@ requirements:
     - {{ cdt('libxext') }}           # [linux]
   host:
     - python
+    - numpy=1.16
     - pip
     - glew
     - libglu                         # [linux]
@@ -36,7 +37,7 @@ requirements:
     - xorg-libxfixes
   run:
     - python
-    - numpy
+    - {{ pin_compatible("numpy") }}
     - libpng
     - freetype
     - pyqt
