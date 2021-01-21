@@ -27,7 +27,8 @@ requirements:
     - {{ cdt('libxext') }}           # [linux]
   host:
     - python
-    - numpy =1.17
+    - numpy =1.16  # [py < 39]
+    - numpy =1.19  # [py >= 39]
     - pip
     - glew
     - libglu                         # [linux]
