@@ -4,7 +4,7 @@ import requests
 from pymol2 import SingletonPyMOL
 
 
-PDB_ID = "1aki"
+PDB_ID = "1l2y"
 CIF_PATH = join(tempfile.gettempdir(), PDB_ID+".cif")
 PNG_PATH = join(tempfile.gettempdir(), "pymol_test.png")
 
@@ -19,6 +19,10 @@ pymol.start()
 cmd = pymol.cmd
 
 cmd.load(CIF_PATH)
-cmd.png(PNG_PATH, ray=1)
 
+# Test rendering
+cmd.png(PNG_PATH, ray=1)
 assert isfile(PNG_PATH)
+
+# Test correct integration of NumPy
+assert cmd.get_coordset(PDB_ID).shape == (304, 3)
