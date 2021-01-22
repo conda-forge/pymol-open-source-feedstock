@@ -51,6 +51,7 @@ test:
     - test.py
   commands:
     - "python test.py"
+
 app:
   entry: pymol
   summary: "PyMOL molecular visualization system"
