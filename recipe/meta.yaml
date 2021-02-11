@@ -11,7 +11,7 @@ source:
 
 build:
   number: {{ number }}
-  script: "{{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml --no-vmd-plugins"
+  script: "{{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml"
   skip: True  # [py < 37]
   skip: True  # [osx]
 
@@ -36,13 +36,17 @@ requirements:
     - freetype
     - glm
     - xorg-libxfixes
+    - {{ pin_compatible("libnetcdf", max_pin="x.x.x", min_pin="x.x.x")}}
+    - pmw
   run:
     - python
     - {{ pin_compatible("numpy") }}
+    - {{ pin_compatible("libnetcdf", max_pin="x.x.x", min_pin="x.x.x")}}
     - libpng
     - freetype
     - pyqt
     - glm
+    - pmw
 
 test:
   requires:
