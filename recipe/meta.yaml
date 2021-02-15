@@ -36,12 +36,11 @@ requirements:
     - freetype
     - glm
     - xorg-libxfixes
-    - {{ pin_compatible("libnetcdf", max_pin="x.x.x", min_pin="x.x.x")}}
-    - pmw
+    - libnetcdf =4.7.4
   run:
     - python
     - {{ pin_compatible("numpy") }}
-    - {{ pin_compatible("libnetcdf", max_pin="x.x.x", min_pin="x.x.x")}}
+    - {{ pin_compatible("libnetcdf") }}
     - libpng
     - freetype
     - pyqt
