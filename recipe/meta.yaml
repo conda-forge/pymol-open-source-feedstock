@@ -1,5 +1,5 @@
 {% set version = "2.4.0" %}
-{% set number = "4" %}
+{% set number = "5" %}
 
 package:
   name: pymol-open-source
@@ -13,7 +13,6 @@ build:
   number: {{ number }}
   script: "{{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml"
   skip: True  # [py < 37]
-  skip: True  # [osx]
 
 requirements:
   build:
@@ -27,8 +26,7 @@ requirements:
     - {{ cdt('libxext') }}           # [linux]
   host:
     - python
-    - numpy =1.16  # [py < 39]
-    - numpy =1.19  # [py >= 39]
+    - numpy
     - pip
     - glew
     - libglu                         # [linux]
@@ -36,7 +34,7 @@ requirements:
     - freetype
     - glm
     - xorg-libxfixes
-    - libnetcdf =4.7.4
+    - libnetcdf
   run:
     - python
     - {{ pin_compatible("numpy") }}
