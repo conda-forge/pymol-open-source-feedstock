@@ -11,7 +11,8 @@ source:
 
 build:
   number: {{ number }}
-  script: "{{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml"
+  script: 'env PREFIX_PATH="${PREFIX}"          {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [unix]
+  script: 'set "PREFIX_PATH=%LIBRARY_PREFIX%" & {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [win]
   skip: True  # [py < 37]
 
 requirements:
