@@ -11,8 +11,10 @@ source:
 
 build:
   number: {{ number }}
-  script: 'env PREFIX_PATH="${PREFIX}"          {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [unix]
-  script: 'set "PREFIX_PATH=%LIBRARY_PREFIX%" & {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [win]
+  script:
+    - rm $PREFIX/include/menu.h  # [osx]
+    - 'env PREFIX_PATH="${PREFIX}"          {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [unix]
+    - 'set "PREFIX_PATH=%LIBRARY_PREFIX%" & {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml'  # [win]
   skip: True  # [py < 37]
 
 requirements:
