@@ -10,8 +10,12 @@ freetype:
 - '2'
 glew:
 - '2.1'
+libnetcdf:
+- 4.7.4
 libpng:
 - '1.6'
+numpy:
+- '1.16'
 pin_run_as_build:
   freetype:
     max_pin: x
@@ -23,6 +27,9 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.7.* *_cpython
 target_platform:
 - win-64
+zip_keys:
+- - python
+  - numpy
