@@ -1,0 +1,12 @@
+diff --git a/layer0/Block.h b/layer0/Block.h
+index a9173bd2..91fba37e 100644
+--- a/layer0/Block.h
++++ b/layer0/Block.h
+@@ -18,6 +18,7 @@ Z* -------------------------------------------------------------------
+ #ifndef _H_Block
+ #define _H_Block
+ 
++#include <algorithm>
+ #include <vector>
+ #include<utility>
+ 
