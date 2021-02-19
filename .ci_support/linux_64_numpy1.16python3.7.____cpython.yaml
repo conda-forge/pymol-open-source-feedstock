@@ -1,7 +1,7 @@
 c_compiler:
-- gcc
+- clang
 c_compiler_version:
-- '9'
+- '11'
 cdt_name:
 - cos6
 channel_sources:
@@ -9,9 +9,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
+- clangxx
 cxx_compiler_version:
-- '9'
+- '11'
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 freetype:
