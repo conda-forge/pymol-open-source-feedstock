@@ -1,41 +1,5 @@
-diff --git a/contrib/uiuc/plugins/molfile_plugin/src/maeffplugin.cpp b/contrib/uiuc/plugins/molfile_plugin/src/maeffplugin.cpp
-index efaede65..0cf8c328 100644
---- a/contrib/uiuc/plugins/molfile_plugin/src/maeffplugin.cpp
-+++ b/contrib/uiuc/plugins/molfile_plugin/src/maeffplugin.cpp
-@@ -66,6 +66,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- #include <string>
- #include <stdexcept>
- #include <vector>
-+#include <algorithm>
- 
- #ifdef DESRES_WIN32
- #define ssize_t int
-diff --git a/layer0/Block.h b/layer0/Block.h
-index a9173bd2..91fba37e 100644
---- a/layer0/Block.h
-+++ b/layer0/Block.h
-@@ -18,6 +18,7 @@ Z* -------------------------------------------------------------------
- #ifndef _H_Block
- #define _H_Block
- 
-+#include <algorithm>
- #include <vector>
- #include<utility>
- 
-diff --git a/layer1/Extrude.cpp b/layer1/Extrude.cpp
-index f465facc..954bc0e5 100644
---- a/layer1/Extrude.cpp
-+++ b/layer1/Extrude.cpp
-@@ -14,6 +14,7 @@ I* Additional authors of this source file include:
- -*
- Z* -------------------------------------------------------------------
- */
-+#include <algorithm>
- 
- #include"os_predef.h"
- #include"os_std.h"
 diff --git a/layer1/PyMOLObject.cpp b/layer1/PyMOLObject.cpp
-index 595ba01a..cf540d72 100644
+index 1e56c0d5..cd9e5998 100644
 --- a/layer1/PyMOLObject.cpp
 +++ b/layer1/PyMOLObject.cpp
 @@ -14,6 +14,8 @@ I* Additional authors of this source file include:
@@ -47,25 +11,6 @@ index 595ba01a..cf540d72 100644
  #include"os_python.h"
  
  #include"os_predef.h"
-diff --git a/layer1/SceneMouse.cpp b/layer1/SceneMouse.cpp
-index 2f1fc4b3..07e8c86a 100644
---- a/layer1/SceneMouse.cpp
-+++ b/layer1/SceneMouse.cpp
-@@ -1,3 +1,5 @@
-+#include <algorithm>
-+
- #include "SceneMouse.h"
- #include "ButMode.h"
- #include "Editor.h"
-diff --git a/layer1/ScenePicking.cpp b/layer1/ScenePicking.cpp
-index 74b4c6a0..806629e2 100644
---- a/layer1/ScenePicking.cpp
-+++ b/layer1/ScenePicking.cpp
-@@ -1,3 +1,4 @@
-+#include <algorithm>
- 
- 
- #include"Base.h"
 diff --git a/layer1/ScrollBar.cpp b/layer1/ScrollBar.cpp
 index 6c6d7f3f..066bd683 100644
 --- a/layer1/ScrollBar.cpp
@@ -79,16 +24,3 @@ index 6c6d7f3f..066bd683 100644
  #include"os_gl.h"
  #include"Base.h"
  #include"Block.h"
-diff --git a/layer2/ObjectDist.cpp b/layer2/ObjectDist.cpp
-index 53edb32d..d8531db8 100644
---- a/layer2/ObjectDist.cpp
-+++ b/layer2/ObjectDist.cpp
-@@ -14,6 +14,8 @@ I* Additional authors of this source file include:
- -*
- Z* -------------------------------------------------------------------
- */
-+#include <algorithm>
-+
- #include"os_python.h"
- 
- #include"os_predef.h"
