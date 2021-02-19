@@ -21,8 +21,10 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}  # [not linux]
+    - {{ compiler('cxx') }}  # [not linux]
+    - clang  # [linux]
+    - clangxx  # [linux]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}        # [linux]
