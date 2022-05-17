@@ -120,4 +120,4 @@ END
 
     # Check if the data from .gro and .g96 are the same
     diff = np.abs(cmd.get_coordset('g96data') - cmd.get_coordset('grodata')).max()
-    assert diff < 0.005, diff  # difference should only come from rounding error
+    assert diff < 0.008, diff  # difference should only come from rounding error
