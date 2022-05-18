@@ -13,7 +13,7 @@ build:
   number: {{ number }}
   script:
     - {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml  # [not osx]
-    - CFLAGS="${CFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}" CXXFLAGS="${CXXFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}" {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml"  # [osx]
+    - CFLAGS="${CFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}" CXXFLAGS="${CXXFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}" {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml  # [osx]
   skip: true  # [py < 37]
 
 requirements:
