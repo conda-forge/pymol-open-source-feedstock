@@ -11,10 +11,7 @@ source:
 
 build:
   number: {{ number }}
-  script:
-    - export CFLAGS="${CFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}"      # [osx]
-    - export CXXFLAGS="${CXXFLAGS} -isysroot ${CONDA_BUILD_SYSROOT}"  # [osx]
-    - {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml
+  script: {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml
   skip: true  # [py < 37]
 
 requirements:
