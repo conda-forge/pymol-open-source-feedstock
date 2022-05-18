@@ -1,0 +1,4 @@
+# PyMOL 2.4+ only supports macOS 10.12 and later
+# https://pymol.org/2/support.html?#installation
+MACOSX_SDK_VERSION:        # [osx and x86_64]
+  - "10.12"                # [osx and x86_64]
