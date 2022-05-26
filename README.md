@@ -228,5 +228,6 @@ Feedstock Maintainers
 =====================
 
 * [@awacha](https://github.com/awacha/)
+* [@bkpoon](https://github.com/bkpoon/)
 * [@padix-key](https://github.com/padix-key/)
 
