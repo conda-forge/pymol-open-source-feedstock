@@ -119,5 +119,5 @@ END
     assert cmd.get_coordset('g96data').shape == (30, 3)
 
     # Check if the data from .gro and .g96 are the same
-    assert np.abs(cmd.get_coordset('g96data') - cmd.get_coordset(
-        'grodata')).max() < 0.005  # difference should only come from rounding error
+    diff = np.abs(cmd.get_coordset('g96data') - cmd.get_coordset('grodata')).max()
+    assert diff < 0.008, diff  # difference should only come from rounding error
