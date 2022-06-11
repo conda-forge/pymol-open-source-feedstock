@@ -22,6 +22,8 @@ libnetcdf:
 - 4.8.1
 libpng:
 - '1.6'
+libxml2:
+- '2.9'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -32,6 +34,8 @@ pin_run_as_build:
   glew:
     max_pin: x.x
   libpng:
+    max_pin: x.x
+  libxml2:
     max_pin: x.x
   python:
     min_pin: x.x
