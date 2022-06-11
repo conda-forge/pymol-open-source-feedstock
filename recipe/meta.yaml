@@ -11,7 +11,7 @@ source:
 
 build:
   number: {{ number }}
-  script: {{ PYTHON }} setup.py install --use-msgpackc=no --no-libxml
+  script: {{ PYTHON }} setup.py install --use-msgpackc=no
   skip: true  # [py < 37]
 
 requirements:
@@ -32,6 +32,7 @@ requirements:
     - libglu                         # [linux]
     - libpng
     - freetype
+    - libxml2
     - glm
     - xorg-libxfixes
     - libnetcdf
