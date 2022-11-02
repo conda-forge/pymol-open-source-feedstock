@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '13'
+- '14'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
+- '14'
 freetype:
 - '2'
 glew:
@@ -21,20 +21,12 @@ libnetcdf:
 libpng:
 - '1.6'
 libxml2:
-- '2.9'
+- '2.10'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
 - '1.21'
 pin_run_as_build:
-  freetype:
-    max_pin: x
-  glew:
-    max_pin: x.x
-  libpng:
-    max_pin: x.x
-  libxml2:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
