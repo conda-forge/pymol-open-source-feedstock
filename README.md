@@ -1,11 +1,11 @@
-About pymol-open-source
-=======================
+About pymol-open-source-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymol-open-source-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pymol.org/
 
 Package license: LicenseRef-PyMOL
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymol-open-source-feedstock/blob/main/LICENSE.txt)
 
 Summary: A user-sponsored molecular visualization system. PyMOL is a trademark of Schrodinger, LLC.
 
