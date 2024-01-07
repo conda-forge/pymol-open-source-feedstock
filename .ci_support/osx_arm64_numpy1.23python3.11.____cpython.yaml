@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '16'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
 freetype:
 - '2'
 glew:
@@ -21,7 +21,7 @@ libnetcdf:
 libpng:
 - '1.6'
 libxml2:
-- '2.11'
+- '2.12'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:

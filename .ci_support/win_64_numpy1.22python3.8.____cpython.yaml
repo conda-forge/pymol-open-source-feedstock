@@ -1,19 +1,11 @@
 c_compiler:
-- gcc
-c_compiler_version:
-- '12'
-cdt_name:
-- cos6
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
-cxx_compiler_version:
-- '12'
-docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- vs2019
 freetype:
 - '2'
 glew:
@@ -23,9 +15,9 @@ libnetcdf:
 libpng:
 - '1.6'
 libxml2:
-- '2.11'
+- '2.12'
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -33,9 +25,7 @@ pin_run_as_build:
 python:
 - 3.8.* *_cpython
 target_platform:
-- linux-64
+- win-64
 zip_keys:
-- - c_compiler_version
-  - cxx_compiler_version
 - - python
   - numpy
