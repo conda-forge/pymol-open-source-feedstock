@@ -6,6 +6,10 @@ c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.12'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -23,7 +27,7 @@ libnetcdf:
 libpng:
 - '1.6'
 libxml2:
-- '2.12'
+- '2'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
