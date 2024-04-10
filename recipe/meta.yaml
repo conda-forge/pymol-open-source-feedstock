@@ -9,7 +9,7 @@ source:
   sha256: 45e800a02680cec62dff7a0f92283f4be7978c13a02934a43ac6bb01f67622cf
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} setup.py install --use-msgpackc=no
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
