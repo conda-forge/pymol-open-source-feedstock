@@ -31,7 +31,7 @@ requirements:
     - python
     - pip
     - numpy >=2.0
-    - setuptools>=69.2.0
+    - setuptools >=69.2.0
     - glew
     - libglu                         # [linux]
     - libpng
