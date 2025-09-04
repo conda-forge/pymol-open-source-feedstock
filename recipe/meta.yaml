@@ -9,7 +9,8 @@ source:
   sha256: 54306d65060bd58ed8b3dab1a8af521aeb4fd417871f15f463ff05ccb4e121fe
 
 build:
-  number: 0
+  skip: true  # [py>312]
+  number: 1
   script: {{ PYTHON }} setup.py install --use-msgpackc=no
 
 requirements:
