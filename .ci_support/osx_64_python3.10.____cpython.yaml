@@ -21,7 +21,7 @@ cxx_compiler_version:
 freetype:
 - '2'
 glew:
-- '2.1'
+- '2.2'
 libnetcdf:
 - 4.9.3
 libpng:
