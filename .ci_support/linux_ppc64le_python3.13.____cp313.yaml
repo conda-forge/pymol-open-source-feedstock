@@ -21,7 +21,7 @@ docker_image:
 freetype:
 - '2'
 glew:
-- '2.2'
+- '2.3'
 libnetcdf:
 - 4.9.3
 libpng:
