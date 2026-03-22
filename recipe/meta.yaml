@@ -9,7 +9,7 @@ source:
   sha256: 54306d65060bd58ed8b3dab1a8af521aeb4fd417871f15f463ff05ccb4e121fe
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} setup.py install --use-msgpackc=no
 
 requirements:
@@ -22,12 +22,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}        # [linux]
-    - {{ cdt('libxdamage') }}        # [linux]
-    - {{ cdt('libxxf86vm') }}        # [linux]
-    - {{ cdt('libxext') }}           # [linux]
   host:
     - python
     - pip
@@ -41,6 +35,7 @@ requirements:
     - glm
     - xorg-libxfixes
     - libnetcdf
+    - libgl-devel                    # [linux]
   run:
     - python
     - {{ pin_compatible("libnetcdf") }}
