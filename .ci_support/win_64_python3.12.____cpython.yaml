@@ -13,7 +13,7 @@ freetype:
 glew:
 - '2.3'
 libnetcdf:
-- 4.9.3
+- 4.10.0
 libpng:
 - '1.6'
 libxml2_devel:
