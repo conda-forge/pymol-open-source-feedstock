@@ -9,7 +9,7 @@ source:
   sha256: 54306d65060bd58ed8b3dab1a8af521aeb4fd417871f15f463ff05ccb4e121fe
 
 build:
-  number: 8
+  number: 9
   script: {{ PYTHON }} setup.py install --use-msgpackc=no
 
 requirements:
@@ -41,7 +41,8 @@ requirements:
     - {{ pin_compatible("libnetcdf") }}
     - libpng
     - freetype
-    - pyqt
+    # qt-main 5.15 on ppc64le is stuck on icu 75 / libxml2 <2.14; GUI unavailable there
+    - pyqt                           # [not ppc64le]
     - glm
     - pmw
 
